@@ -7,7 +7,7 @@ namespace labVectorsVariantFour
     {
         public static void Main(string[] args)
         {
-            StreamReader streamReader = new StreamReader(@"D:\Inlet.in.txt"); 
+            StreamReader streamReader = new StreamReader("Inlet.in.txt"); 
 
             string [] inputData =  streamReader.ReadLine().Trim().Split(' '); 
 
@@ -39,9 +39,9 @@ namespace labVectorsVariantFour
                 }
             }
 
-            File.Create(@"D:\Outlet.out.txt").Close();
+            File.Create("Outlet.out.txt").Close();
 
-            StreamWriter streamWriter = new StreamWriter(@"D:\Outlet.out.txt");
+            StreamWriter streamWriter = new StreamWriter("Outlet.out.txt");
 
             for (int i = 0; i < B.Length; i++)
             {
